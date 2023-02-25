@@ -1,5 +1,5 @@
 {
-    "name": "Live Streaming",
+    "name": "Live Streaming (no-aspect)",
     "author": "Florian Wesch <fw@info-beamer.com>",
     "desc": "Play from various internet stream sources. Experimental",
     "lifecycle": "beta",

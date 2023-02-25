@@ -1,6 +1,7 @@
-[![Import](https://cdn.infobeamer.com/s/img/import.png)](https://info-beamer.com/use?url=https://github.com/info-beamer/package-livestream)
-
 # Description
+
+This is a fork that doesn't try to show the vidoe in the correct aspect ratio but rather assumes that
+the display aspect ratio matches the videos aspect ratio.
 
 Uses the [streamlink](https://streamlink.github.io/) streaming command line utility to stream from various stream providers
 like Twitch, Youtube or others. You can find the full list of supported sources [here](https://streamlink.github.io/plugin_matrix.html).
@@ -14,7 +15,7 @@ You can define multiple channels. Each with its own name and stream url source. 
 `channel down` keys on your TV remote to switch between the channels. This needs an info-beamer hosted OS version
 that supports [CEC](https://info-beamer.com/blog/info-beamer-hosted-adds-cec-support).
 
-Alternatively you can visit the device detail page for any of your devices and use the 
+Alternatively you can visit the device detail page for any of your devices and use the
 [remote control interface](https://info-beamer.com/blog/introducing-device-remote-control-interfaces) to trigger
 `Channel Up` or `Channel Down` events. This allows you to switch channels from remote.
 

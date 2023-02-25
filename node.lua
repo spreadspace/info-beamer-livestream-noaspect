@@ -130,7 +130,7 @@ function node.render()
     local x = WIDTH/2 - text_w/2
     local y = HEIGHT/2 + w/2 + 40
     x = x + font:write(x, y, text, 30, .2,.2,.8,1)
-    local dotdot = ("..."):sub(0, 1+math.floor(sys.now()*2 % 3)) 
+    local dotdot = ("..."):sub(0, 1+math.floor(sys.now()*2 % 3))
     font:write(x, y, dotdot, 30, .2,.2,.8,1)
 
     send_channel()
@@ -139,8 +139,7 @@ function node.render()
         local state, w, h = video:state()
         if state == "loaded" then
             gl.clear(0, 0, 0, 1)
-            local x1, y1, x2, y2 = util.scale_into(WIDTH, HEIGHT, w, h)
-            video:place(x1, y1, x2, y2):layer(2)
+            video:place(0, 0, NATIVE_WIDTH, NATIVE_HEIGHT):layer(2)
         elseif state == "finished" or state == "error" then
             stop_and_wait(1)
         end
